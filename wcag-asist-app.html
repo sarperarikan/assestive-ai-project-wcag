@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelişmiş erişilebilirlik sağlayan bir sayfa örneği.">
+  <title>WCAG Asist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Sayfa Başlığı">
+    <h1>WCAG ASSİSTANT </h1>
+  </header>
+  
+  <main role="main">
+    <section aria-labelledby="chat-widget-description">
+      <h2 id="chat-widget-description">Sohbet Widget'ı</h2>
+      <p>
+        Bu chatbot WCAG standartlarında kodlarınızı analiz eder veya kodlarınızı oluşturur.
+        Erişilebilirlik standartlarına uygun olarak geliştirilmiştir.
+      </p>
+
+      <!-- Sohbet Widget Script -->
+      <script
+      data-button-color="#4CAF50"
+      data-user-bg-color="#E8F5E9"
+      data-asistant-bg-color="#FFFFFF"
+      data-chat-icon="#388E3C"
+      data-text-size="16px"
+      data-assistant-bg-color="#F5F5F5"
+        data-assistant-name="AssertiveAI"
+        data-no-sponsor="WCAG Asistant"
+        data-greeting="Web İçeriği Erişilebilirlik Danışmanına hoşgeldiniz. Buradan kod yapılarınızı oluşturabilir veya mevcut kodlarınızı revize edebilirsiniz."
+        data-embed-id="06053038-0418-4c78-8dab-20a1efd74ffc"
+        data-base-api-url="https://visionasist.com/api/embed"
+        src="https://visionasist.com/embed/anythingllm-chat-widget.min.js">
+      </script>
+      <!-- AnythingLLM (https://anythingllm.com) -->
+    </section>
+  </main>
+  
+  <footer role="contentinfo" aria-label="Sayfa Alt Bilgisi">
+    <p>© 2025 AssestiveAI. Tüm hakları saklıdır. Daha fazla bilgi için <a href="https://assestiveai.com" target="_blank">web sitemizi</a> ziyaret edin.</p>
+  </footer>
+</body>
+</html>
